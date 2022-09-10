@@ -1,0 +1,135 @@
+@use 'variables' as v;
+
+.section_socials {
+  flex-direction: column;
+  justify-content: center;
+
+  &_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &_link {
+      color: white;
+      text-decoration: none;
+      transition: 400ms;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: -2px;
+        left: 0;
+        background: rgb(12, 12, 12);
+        background: linear-gradient(90deg, rgba(12,12,12,1) 7%, rgba(237,237,237,1) 100%);
+        transform-origin: bottom right;
+        transition: transform 0.6s ease-out;
+      }
+
+      &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+
+    .facebook,
+    .instagram {
+      height: 24px;
+      width: 24px;
+      margin-right: 10px;
+    }
+
+    .facebook {
+      background: url(../media/facebook-3-24.png) no-repeat;
+    }
+
+    .instagram {
+      background: url(../media/instagram-24.png) no-repeat;
+    }
+
+    .slash {
+      margin: 0 15px;
+    }
+  }
+
+  &_images {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    padding-left: 10vw;
+    overflow: hidden;
+    position: relative;
+    gap: 30px;
+
+    @media screen and (max-width: 800px) {
+      padding: 20px;
+      justify-content: center;
+      gap: 15px
+    }
+
+    @media screen and (max-width: 540px) {
+      overflow: scroll;
+      justify-content: flex-start;
+    }
+
+    &_img-wrapper {
+      min-width: 150px;
+      width: 20vw;
+      padding: 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @media screen and (max-width: 800px) {
+        width: 25vw;
+      }
+
+      &_img {
+        width: 100%;
+        height: auto;
+      }
+
+      .icon-heart {
+        background: url(../media/favorite-3-32.png) no-repeat center;
+        background-size: 25px 25px;
+        height: 25px;
+        width: 25px;
+        margin: 15px 10px 10px 0;
+        transition: 400ms;
+        cursor: pointer;
+
+        @media screen and (max-width: 800px) {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+
+    .icon-gear {
+      position: absolute;
+      background: url(../media/settings-48.png) center no-repeat;
+      background-size: 100%;
+      top: 15px;
+      left: 15px;
+      height: 50px;
+      width: 50px;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .section_socials_images_border.border,
+    .section_socials_images.inner-border {
+      border: none;
+      padding: 0;
+    }
+  }
+}
