@@ -4,7 +4,7 @@ import { ROUTE_NAMES } from "../data/data"
 
 const Button = ({ text, link }) => {
   return (
-    <button type="button" className="button-primary sliding-border">
+    <button type="button" className="button-primary green-shadow-hover">
       <div className="button-primary_container">
         <span>
           {link

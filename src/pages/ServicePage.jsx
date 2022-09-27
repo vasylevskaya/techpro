@@ -1,7 +1,8 @@
 import React from "react"
+import { useRecoilValue } from 'recoil'
+import { languageState } from "../data/recoil"
 import { Link, useLocation } from "react-router-dom"
 import { ROUTE_NAMES } from "../data/data"
-import ua from "../data/_ua"
 import AppearOnScrollWrapper from "../components/animation/AppearOnScrollWrapper"
 
 import video1 from "../media/service_1.mp4"
@@ -92,7 +93,8 @@ const ServiceItem = ({ serviceObject }) => {
   )
 }
 const ServicePage = () => {
-  const { services } = ua
+  const lang = useRecoilValue(languageState)
+  const { services } = lang
   const { pathname } = useLocation()
   const splittedPathname = pathname.split('/')
   const serviceId = splittedPathname[splittedPathname.length - 1]

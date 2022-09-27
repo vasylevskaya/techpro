@@ -1,14 +1,16 @@
 import React from "react"
 import * as yup from "yup"
 import emailjs from '@emailjs/browser'
+import { useRecoilValue } from 'recoil'
+import { languageState } from "../data/recoil"
 import { Formik, Form, Field } from 'formik'
 import { feedbackFormData } from "../data/feedback"
 import { EMAIL_CONFIG } from "../data/data"
-import ua from "../data/_ua"
 import AppearOnScrollWrapper from "./animation/AppearOnScrollWrapper"
 
 const FeedbackForm = () => {
-  const { feedback } = ua
+  const lang = useRecoilValue(languageState)
+  const { feedback } = lang
 
   return (
     <Formik
@@ -37,28 +39,34 @@ const FeedbackForm = () => {
               <AppearOnScrollWrapper
                 key={input.name}
                 element={(
-                  <div className={`border ${formikContext.errors[input.name] && formikContext.touched[input.name] && "error"}`}>
+                  <div>
                     {input.type !== "checkbox" ? (
                         <Field
+                          component={input.type === "textarea" && "textarea"}
                           type={input.type}
                           name={input.name}
-                          className="feedback-form_input inner-border fs-12"
+                          className={`feedback-form_input inner-border fs-12
+                            ${!formikContext.errors[input.name] && formikContext.touched[input.name] && "validated"}`}
                           placeholder={input.placeholder}
                         />
                       ) : (
-                        <div className="feedback-form_input inner-border fs-12 checkbox">
+                        <div className={`feedback-form_input inner-border fs-12 checkbox
+                          ${!formikContext.errors[input.name] && formikContext.touched[input.name] && "validated"}`}>
                           <label className="checkbox_title">{input.placeholder}</label>
                           <div className="checkbox_options">
                             {input.options.map((option) => (
-                              <label key={option} className="checkbox_options_label">
+                              <div key={option} className="checkbox_options_option">
                                 <Field
                                   type="checkbox"
-                                  className="checkbox_options_label_checkbox"
+                                  className="checkbox_options_input"
                                   name={input.name}
                                   value={option}
+                                  id={option}
                                 />
-                                {option}
-                              </label>
+                                <label htmlFor={option} key={option} className="checkbox_options_label">
+                                  {option}
+                                </label>
+                              </div>
                             ))}
                           </div>
                         </div>
@@ -69,7 +77,7 @@ const FeedbackForm = () => {
             ))}
             <button
               type="submit"
-              className="button-primary sliding-border"
+              className="button-primary green-shadow-hover"
               disabled={formikContext.isSubmitting}
             >
               <div className="button-primary_container">

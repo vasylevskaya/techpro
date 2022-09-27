@@ -1,29 +1,25 @@
 import React from 'react'
+import { useRecoilValue } from 'recoil'
+import { languageState } from "../data/recoil"
 import Button from '../components/Button'
 import AppearOnScrollWrapper from '../components/animation/AppearOnScrollWrapper'
-import ua from "../data/_ua"
-import img1 from "../media/service_2.png"
+import { useMediaQuery } from 'react-responsive'
+
+import desktopClip from '../media/ProTech.mp4'
+import mobileClip from '../media/ProTech_Mobile.mp4'
 
 const AboutUsPage = () => {
-  const { aboutUs } = ua
+  const lang = useRecoilValue(languageState)
+  const isMobileDevice = useMediaQuery({ maxWidth: 640 })
+  const { aboutUs } = lang
+
   return (
     <div className='page about-us-page'>
         <div className='page_header'>
-          <img src={img1} alt="background" className='page_header_img' />
-          <div className='page_header_content'>
-            <AppearOnScrollWrapper
-              element={(
-                <>
-                  <p className='subtitle fs-30 uc txt-white text-align--center bold'>
-                    {aboutUs.subtitle1}
-                    <span className='txt-green'>{aboutUs.subtitle2}</span>
-                    {aboutUs.subtitle3}
-                  </p>
-                  <p className='subtitle fs-14 txt-white text-align--center'>{aboutUs.text}</p>
-                </>
-              )}
-            />
-          </div>
+          <video autoPlay muted loop className='page_header_img'>
+            <source src={isMobileDevice ? mobileClip : desktopClip} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <AppearOnScrollWrapper
           element={<p className='title uc text-align--center fs-18'>{aboutUs.title2}</p>}
@@ -32,8 +28,8 @@ const AboutUsPage = () => {
           element={(
             <ul className='about-us-page_services-list'>
               {aboutUs.servicesList.map((servicesListItem) => (
-                <li className='border about-us-page_services-list_item' key={servicesListItem.title}>
-                  <div className='inner-border about-us-page_services-list_item_content fs-12'>
+                <li className='about-us-page_services-list_item' key={servicesListItem.title}>
+                  <div className='about-us-page_services-list_item_content fs-12'>
                     <p className='fs-12 txt-white'>{servicesListItem.title}</p>
                     {servicesListItem.subtitle && (
                       <p className='fs-10 txt-green'>{servicesListItem.subtitle}</p>

@@ -61,6 +61,17 @@
       }
     }
   }
+
+  .button-primary {
+    border-color: v.$green;
+    max-width: 300px;
+    height: 70px;
+  }
+
+  .button-primary .button-primary_container_text {
+    color: white;
+    font-size: 18px;
+  }
 }
 
 /* Keyframes */

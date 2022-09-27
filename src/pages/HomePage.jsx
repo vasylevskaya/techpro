@@ -2,7 +2,6 @@ import React from 'react'
 
 import ContactUs from '../components/ContactUs'
 import Feedback from '../components/Feedback'
-import SocialMedia from '../components/SocialMedia'
 import QuestionsAndAnswers from "../components/QuestionsAndAnswers"
 import Ordering from "../components/Ordering"
 import AboutUs from "../components/AboutUs"
@@ -16,8 +15,7 @@ const HomePage = () => {
       <SlideOnScrollWrapper element={<AboutUs />} />
       <SlideOnScrollWrapper element={<Ordering />} />
       <QuestionsAndAnswers />
-      <SlideOnScrollWrapper element={<SocialMedia />} />
-      <Feedback headerAlign="right" />
+      <Feedback />
       <ContactUs />
     </div>
   )

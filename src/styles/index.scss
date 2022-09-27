@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 @import url(./_variables.scss);
 @import url(./common.scss);
 
@@ -7,8 +9,6 @@
 @import url(./homepage.scss);
 @import url(./feedback.scss);
 @import url(./contacts.scss);
-@import url(./socials.scss);
-@import url(./socials.scss);
 @import url(./ordering.scss);
 @import url(./services.scss);
 @import url(./aboutUs.scss);
@@ -28,7 +28,8 @@ html {
 
 body {
   margin: 0;
-  background: rgb(12, 12, 12) url(../media/dots2.png);
+  background: black url(../media/tech_pro.png) repeat;
+  background-size: 100% auto;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   -webkit-font-smoothing: antialiased;
@@ -45,26 +46,4 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-}
-
-.section {
-  display: flex;
-
-  &_container {
-    height: 100%;
-    display: flex;
-  }
-}
-
-.title {
-  width: 100%;
-  margin-bottom: 20px;
-  font-style: italic;
-  color: white;
-}
-
-.subtitle {
-  width: 100%;
-  margin-bottom: 15px;
-  font-weight: 400;
 }

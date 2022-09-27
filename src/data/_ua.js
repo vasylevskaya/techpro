@@ -1,11 +1,11 @@
 const ua = {
+  language: "ua",
   header: {
     nav: {
       home: "Головна",
       about_us: "Про нас",
       services: "Послуги",
-      feedback: "Взаємозв'язок",
-      contact: "Контакт",
+      feedback: "Контакти"
     }
   },
   footer: {
@@ -17,7 +17,7 @@ const ua = {
       "Графіювання поверхонь",
       "Порошкове фарбування"
     ],
-    btnText: "Послуги"
+    btnText: "Наші Послуги"
   },
   aboutUs: {
     title: "Про Нас",

@@ -1,64 +1,11 @@
 @use 'variables' as v;
 
-.section_services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5vw 0;
-
-  @media screen and (max-width: 640px) {
-    padding-bottom: 60px;
-  }
-
-  &_content {
-    width: 100%;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &_text {
-      width: 60%;
-      text-align: justify;
-      margin: 30px 0 50px;
-
-      @media screen and (max-width: 900px) {
-        width: 70%;
-        margin: 20px 0 40px;
-      }
-
-      @media screen and (max-width: 640px) {
-        width: 90%;
-        margin: 10px 0 30px;
-      }
-    }
-
-    &_img {
-      width: 70%;
-
-      @media screen and (max-width: 900px) {
-        width: 80%;
-      }
-
-      @media screen and (max-width: 640px) {
-        width: 90%;
-      }
-    }
-  }
-}
-
 .services-page {
   margin-top: 90px;
   display: flex;
   justify-content: flex-start;
-
-  img {
-    width: 70vw;
-    height: 100%;
-    max-height: calc(100vh - 89px);
-    object-fit: cover;
-  }
+  align-items: center;
+  justify-content: center;
 
   &_nav {
     list-style: none;

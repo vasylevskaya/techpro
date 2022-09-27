@@ -1,12 +1,14 @@
 import React from "react"
-import ua from "../data/_ua"
+import { useRecoilValue } from 'recoil'
+import { languageState } from "../data/recoil"
 import Button from "./Button"
 
 const Ordering = () => {
-  const { ordering } = ua
+  const lang = useRecoilValue(languageState)
+  const { ordering } = lang
   return (
     <section className="section section_ordering pd--4">
-      <h2 className='title fs-20 uc text-align--left'>{ordering.title}</h2>
+      <h2 className='title fs-30 uc text-align--center'>{ordering.title}</h2>
       <div className='section_ordering_content '>
         <div className='section_ordering_content_text-container txt-white fs-11'>
           <div>{ordering.text1}</div>

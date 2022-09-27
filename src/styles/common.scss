@@ -4,6 +4,7 @@
 .border,
 .inner-border {
   border: 1px solid rgba(148, 148, 148, 0.275);
+  background: black;
 }
 
 .inner-border {
@@ -204,7 +205,7 @@ button {
 
 .button-primary {
   height: 60px;
-  background: transparent;
+  background: black;
   border: 1px solid rgba(148, 148, 148, 0.275);
   padding: 2px;
   width: 100%;
@@ -212,7 +213,6 @@ button {
   transition: 500ms;
 
   &_container {
-    border: 1px solid rgba(148, 148, 148, 0.275);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -434,3 +434,32 @@ button {
 }
 
 /* ====================== [ Sliding Border ] ====================== */
+
+.green-shadow-hover:hover {
+  transition: 500ms;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(184,237,48,0.4);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(184,237,48,0.4);
+  box-shadow: 0px 0px 20px 1px rgba(184,237,48,0.4);
+}
+
+.section {
+  display: flex;
+  z-index: 2;
+
+  &_container {
+    height: 100%;
+    display: flex;
+  }
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.subtitle {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 400;
+}

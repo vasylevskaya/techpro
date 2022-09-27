@@ -1,32 +1,15 @@
+@use 'variables' as v;
+
 .section_feedback {
-  &_container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &_img-wrapper {
-      padding: 5px;
-      padding-bottom: 80px;
-      min-width: 235px;
-      width: 20%;
-      height: min-content;
+  .feedback-form {
+    width: 60%;
 
-      @media screen and (max-width: 700px) {
-        display: none;
-      }
-
-      &_img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .feedback-form {
-      width: 80%;
-
-      @media screen and (max-width: 640px) {
-        width: 95%;
-      }
+    @media screen and (max-width: 640px) {
+      width: 95%;
     }
   }
 }
@@ -37,7 +20,7 @@
   flex-direction: column;
 
   &_input {
-    background: transparent;
+    background: black;
     padding: 15px;
     color: white;
     letter-spacing: 2px;
@@ -50,9 +33,13 @@
     }
   }
 
-  .border.error,
-  .border.error .inner-border {
-    border: 1px solid rgba(179, 16, 16, 0.635);
+  &_input[type=textarea] {
+    height: 150px;
+    resize: vertical;
+  }
+
+  .validated {
+    border-color: v.$green;
   }
 
   .button-primary {
@@ -65,15 +52,16 @@
       flex-direction: column;
       margin-top: 15px;
 
-      &_label {
-        padding: 10px 30px;
+      &_option {
+        margin: 10px 30px;
+      }
 
-        @media screen and (max-width: 500px) {
-          padding: 10px;
-        }
+      &_input {
+        opacity: 0;
+        height: 0;
 
-        &_checkbox {
-          margin-right: 15px;
+        &:checked + .checkbox_options_label {
+          color: v.$green;
         }
       }
     }
