@@ -10,12 +10,12 @@ const QuestionsAndAnswers = ({ headerAlign = "center" }) => {
   const { qa } = lang
 
   return (
-    <section className="section section_qa pd--4">
+    <section className="section section-qa pd--4">
       <SlideOnScrollWrapper
         element={<h2 className={`title fs-30 uc text-align--${headerAlign}`}>{qa.title}</h2>}
       />
-      <div className="section_qa_content">
-        <div className='section_qa_content_questions'>
+      <div className="section-qa_content">
+        <div className='section-qa_content_questions'>
           {qa.questions.map((question) => (
             <AppearOnScrollWrapper
               key={question.title}

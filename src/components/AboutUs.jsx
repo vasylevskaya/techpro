@@ -1,8 +1,11 @@
 import React from "react"
 import { useRecoilValue } from 'recoil'
 import { languageState } from "../data/recoil"
+import { Link } from "react-router-dom"
+import { ROUTE_NAMES } from "../data/data"
 import Button from "./Button"
 import logo from "../media/logo.png"
+
 
 const AboutUs = () => {
   const lang = useRecoilValue(languageState)
@@ -19,7 +22,9 @@ const AboutUs = () => {
             {aboutUs.subtitle3}
           </p>
           <p className='subtitle fs-14 txt-white text-align--left'>{aboutUs.text}</p>
-          <Button text={aboutUs.btnText} link="ABOUT_US" />
+          <Link to={ROUTE_NAMES.ABOUT_US}>
+            <Button text={aboutUs.btnText} />
+          </Link>
         </div>
         <img className="logo" src={logo} alt="logo" />
       </div>

@@ -3,8 +3,7 @@ export const ROUTE_NAMES = {
   ABOUT_US: '/about-us',
   SERVISES: '/services',
   SERVISE: `/services/:id`,
-  FEEDBACK: '/feedback',
-  CONTACT_US: '/contact'
+  FEEDBACK: '/feedback'
 }
 
 export const LINKS = {

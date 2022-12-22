@@ -5,12 +5,12 @@ import { useRecoilValue } from 'recoil'
 import { languageState } from "../data/recoil"
 import { Formik, Form, Field } from 'formik'
 import { feedbackFormData } from "../data/feedback"
-import { EMAIL_CONFIG } from "../data/data"
 import AppearOnScrollWrapper from "./animation/AppearOnScrollWrapper"
 
 const FeedbackForm = () => {
   const lang = useRecoilValue(languageState)
   const { feedback } = lang
+  const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } = process.env
 
   return (
     <Formik
@@ -24,8 +24,7 @@ const FeedbackForm = () => {
         comment: yup.string().required()
       })}
       onSubmit={async (values, formikContext) => {
-        const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = EMAIL_CONFIG
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, "#feedback-form", PUBLIC_KEY)
+        emailjs.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, "#feedback-form", REACT_APP_PUBLIC_KEY)
           .then(
             () => alert('Your email was sent successfully!'),
             (error) => alert(error.text)
@@ -35,7 +34,7 @@ const FeedbackForm = () => {
     >
       {(formikContext) => (
         <Form className="feedback-form" id="feedback-form">
-          {feedbackFormData.inputs.map((input) => (
+          {feedback?.inputs?.map((input) => (
               <AppearOnScrollWrapper
                 key={input.name}
                 element={(

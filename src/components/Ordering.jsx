@@ -1,6 +1,8 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { useRecoilValue } from 'recoil'
 import { languageState } from "../data/recoil"
+import { ROUTE_NAMES } from "../data/data"
 import Button from "./Button"
 
 const Ordering = () => {
@@ -21,7 +23,9 @@ const Ordering = () => {
           </div>
         </div>
       </div>
-      <Button text={ordering.btnText} link="CONTACT_US" />
+      <Link to={ROUTE_NAMES.FEEDBACK}>
+        <Button text={ordering.btnText} />
+      </Link>
     </section>
   )
 }

@@ -13,214 +13,326 @@ const en = {
   },
   videoBg: {
     list: [
-      "Лазерна різка металів",
-      "Графіювання поверхонь",
-      "Порошкове фарбування"
+      "Metal laser cutting",
+      "Surface engraving",
+      "Powder coating"
     ],
-    btnText: "Наші Послуги"
+    btnText: "Our Services"
   },
   aboutUs: {
     title: "About Us",
-    subtitle1: "Ми - Tech",
+    subtitle1: "We are - Tech",
     subtitle2: "Pro",
     subtitle3: "Engineering",
-    text: "Молоді професіонали своєї справи у широкому спектрі послуг",
-    btnText: "Дізнатись більше",
-    title2: "У нашому парку наявнірізноманітні типи обладнань:",
+    text: "Young professionals in a wide range of services",
+    btnText: "Learn more",
+    title2: "We have various types of equipment available:",
     servicesList: [
       {
-        title: "Установка лазерної порізки металів"
+        title: "Metal laser cutting nachine"
       },
       {
-        title: "Обладнання для лазерної порізки інших матеріалів",
-        subtitle: "(Дерево, поролон, акрил тощо)"
+        title: "Equipment for laser cutting of other materials",
+        subtitle: "(Wood, foam, acrylic, etc.)"
       },
       {
-        title: "Парк оптоволоконних та СО2 гравіювальних лазерів",
-        subtitle: "(Працює по різним металам, дереву, шкірі, склі тощо)"
+        title: "Park of optical fiber and CO2 engraving lasers",
+        subtitle: "(Works on various metals, wood, leather, glass, etc.)"
       },
       {
-        title: "Обладнання для порошкового фарбування",
-        subtitle: "(Здіснюємо фарбування від дисків до різноманітних деталей)"
+        title: "Equipment for powder coating",
+        subtitle: "(We carry out painting from discs to various parts)"
       },
       {
-        title: "Турбогалтування та шліфування деталей"
+        title: "Grinding details"
       },
       {
-        title: "Склоструменева та піскоструменева камери"
+        title: "Glass and sandblasting chambers"
       },
       {
-        title: "Ультрафіолетовий принтер",
-        subtitle: "(Друк можливий на будь-яких деталях та на усі 360 градусів)"
+        title: "UV printer",
+        subtitle: "(Printing is possible on any details and at all 360 degrees)"
       },
       {
-        title: "Ультразвукова ванна для очистки різних поверхонь"
+        title: "Ultrasonic bath for cleaning various surfaces"
       },
       {
-        title: "Пакувальні станки"
+        title: "Packaging machinery"
       }
     ],
-    text2: `Використання найсучаснішого обладнання та новітніх розробок дозволяє нам виконувати різнопланові замовлення дуже якісно та швидко. Широкий
-      спектр наявного устаткування дає змогу виготовити різноманітні вироби та деталі. Також ми працюємо з серійними замовленнями будь-якої складності для
-      забезпечення потреб наших клієнтів у різних галузях промисловості. Ми не обмежуємося стандартними позиціями, готові до креативної співпраці.
-      Ознайомитися з нашими роботами ви можете у соц. мережах.`,
-    title3: "Маєте запитання?",
-    subtitle_3: "Звертайтесь за контактними данними, ми з радістю проконсультуємо Вас!",
-    btnText2: "Наші контакти"
+    text2: `The use of state-of-the-art equipment and the latest developments allows us to fulfill various orders very efficiently and quickly. A wide range of equipment enables the production of various products and parts. We also work with serial orders of any complexity to meet the needs of our customers in various industries. We do not limit ourselves to standard positions, we are ready for creative cooperation. You can get acquainted with our works on social media.`,
+    title3: "Do you have any questions?",
+    subtitle_3: "Please contact us for contact details, we will be happy to consult you!",
+    btnText2: "Our contacts"
   },
   services: {
-    title: "Наші послуги",
+    title: "Our Services",
     list: [
       {
         id: "1",
-        title: "Лазерна порізка металів та інших матеріалів",
+        url: "lazerna-porizka",
+        helmet: {
+          title: "CNC laser cutting Rivne, TechPro laser cutting of metals",
+          metaContent: "CNC laser cutting of metals, stainless steel, leather, plastic, plywood and other non-metals in Rivne and with delivery across Ukraine from Tech Pro Engineering."
+        },
+        title: "Laser cutting of metals and other materials",
         mediaType: "video",
         content: [
-          "Лазерна різка металів та інших матеріалів є однією з наших послуг.",
-          "Технологія такої різки має ряд суттєвих переваг в порівнянні з іншими способами:",
+          "One of the directions of our work is laser cutting of metals and other materials. This service includes sheet cutting of stainless steel and other rough metals.",
+          "The technology of such cutting has a number of significant advantages compared to other methods of cutting metal:",
           [
-            "Довільна конфігурація деталі",
-            "Якісна поверхня різу, відсутність залишкової деформації на деталях",
-            "Швидкість та автоматизація процесу різки лазером"
+            "- Arbitrary configuration of the part: the geometric shape of the parts and the level of complexity of the contour of the product are actually limited only by the imagination of the designer or designer;",
+            "- High-quality cut surface, absence of residual deformation on the parts (computerization of the process and lack of mechanical influence allows avoiding residual deformation of the contours of the cut, as well as minimizing temporary deformations;",
+            "- Speed and automation of the laser cutting process;",
+            "- High precision of the equipment for laser cutting (there is no need for further mechanical adjustment of the part to the given dimensions);"
           ],
-          "Ми також спеціалізуємося на різці неметалевих матеріалів (поролон, шкіра, акрил, пластик, фанера тощо). Вартість послуги лазерної різки розраховується індивідуально."
+          "Production parameters of our machine: working field 1500x3000 cm, cutting thickness of rough metal 16 mm, stainless steel 8 mm.",
+          "Another direction of our work is the cutting of non-metallic materials, which includes the cutting of foam rubber, leather, acrylic, plastic, plywood, etc.",
+          "TechProEngineering provides laser cutting services for metal, leather, plywood and other materials in Rivne and with delivery throughout Ukraine."
         ],
-        feedbackText1: "Ви можете скористатися нашою ",
-        feedbackLink: "формою для зворотного зв'язку",
-        feedbackText2: " та надіслати нам інформацію для прорахунку (вид різки і матеріалу, який вас цікавить), а наш менеджер обов'язково зв'яжеться з вами.",
-        phoneText: " З усіх питань звертайтесь за телефоном:",
-        emailText: "Email для відправки креслень:"
+        feedbackText1: "The cost of the laser cutting service is calculated individually. You can use our ",
+        feedbackLink: "feedback form",
+        feedbackText2: " and send us information for calculation, indicating the type of cutting and material you are interested in. Our manager will definitely contact you.",
+        phoneText: "You can contact us by phone:",
+        emailText: "Email for sending drawings:"
       },
       {
         id: "2",
-        title: "Лазерне гравіювання",
+        url: "lazerne-graviyuvanya",
+        helmet: {
+          title: "Laser engraving, application of text, images, logos on metals and non-metals TechPro Rivne",
+          metaContent: "example contentDecorative laser engraving, high-quality application of information, text, image, logo on metal, stainless steel, leather, rubber, ceramics, glass. Fast and high-quality laser engraving in the Rivne region and with delivery across Ukraine from Tech Pro Engineering."
+        },
+        title: "Laser engraving",
         mediaType: "image",
         content: [
-          "Основним напрямком діяльності нашої компанії є надання послуг лазерного гравіювання по металам та неметалам.Широкий спектр обладнання з лазерного гравіювання дає нам змогу наносити будь-яку інформацію у вигляді тексту, зображення чи лого на метал, пластик, шкіру, дерево, кераміку, гуму, тканину, скло тощо та швидко і якісно опрацьовувати великі гуртові замовлення.",
-          "Вартість послуги лазерного гравіюваня розраховується індивідуально."
+          "The main activity of our company is the provision of laser engraving services on metals and non-metals.",
+          "A wide range of laser engraving equipment allows us to apply any information in the form of text, images or logos on metal, plastic, leather, wood, ceramics, rubber, fabric, glass, etc. and quickly and efficiently process large bulk orders.",
+          "The image obtained by laser engraving is characterized by durability and wear resistance, and thanks to the high controllability of the processing processes, it is possible to obtain both light surface marking and deep laser engraving. Laser engravers have found wide application in souvenir and advertising products, as well as in manufacturing enterprises.",
+          "TechProEngineering provides laser engraving services for metal, leather, ceramics, stainless steel and other materials in Rivne and with delivery throughout Ukraine.",
+          "The cost of the laser engraving service is calculated individually."
         ],
-        feedbackText1: "Ви можете скористатися нашою ",
-        feedbackLink: "формою для зворотного зв'язку",
-        feedbackText2: " та надіслати нам інформацію для прорахунку (вид різки і матеріалу, який вас цікавить), а наш менеджер обов'язково зв'яжеться з вами.",
-        phoneText: " З усіх питань звертайтесь за телефоном:",
-        emailText: "Email для відправки креслень:"
+        feedbackText1: "You can use our ",
+        feedbackLink: "feedback form",
+        feedbackText2: " and send us information for calculation, indicating the type of cutting and material you are interested in. Our manager will definitely contact you.",
+        phoneText: "You can contact us by phone:",
+        emailText: "Email for sending drawings:"
       },
       {
         id: "3",
-        title: "Порошкове фарбування",
+        url: "poroshkove-farbuvanya",
+        helmet: {
+          title: "Industrial painting, powder painting of disks, metals in Rivne, TechPro",
+          metaContent: "A wide range of colors and special effects of powder coating of discs, metal, equipment in the Rivne region and with delivery across Ukraine from Tech Pro Engineering."
+        },
+        title: "Powder coating",
         mediaType: "video",
         content: [
-          "Промислове фарбування (методом порошкового фарбування) є одним із багатьох напрямків нашої діяльності. Зокрема, головною спеціалізацією даного виду послуг є фарбування саме автомобільних дисків.",
-          "Після фарбування поверхня виробу отримує характеристики, яких неможливо досягнути при застосуванні звичайних технологій:",
+          "Industrial painting, carried out by the method of powder painting, is one of the many directions of our activity. In particular, the main specialization of this type of service is the painting of car rims.",
+          "Powder painting is carried out with the help of electrostatic sprinkling of charged particles of powder on the metal surface. During heat treatment in the oven, at a temperature of 180-220C, the powder paint melts and a solid layer is formed - a polymer coating.",
+          "After painting, the surface of the product acquires characteristics that cannot be achieved using conventional technologies:",
           [
-            "Атмосферостійкість та опір дії ультрафіолетових променів",
-            "Хімічна стійкість до розчинів багатьох кислот, лугів, нафтопродуктів та деяких органічних розчинників",
-            "Висока міцність, ударостійкість, еластичність",
-            "Широка гама кольорів і спецефектів"
+            "- Atmospheric resistance and resistance to ultraviolet rays;",
+            "- Chemical resistance to solutions of many acids, alkalis, petroleum products and some organic solvents;",
+            "- High strength, impact resistance, elasticity;",
+            "- A wide range of colors and special effects, combining protective and decorative properties."
           ],
-          "Вартість послуги порошкового фарбування розраховується індивідуально."
+          "Dimensions of our powder chamber: 1500x1000x1000 cm.",
+          "We get the best result of painting by carrying out preliminary technological treatment of the surface. At the enterprise, you can choose the necessary process that will allow you to prepare the products for painting as much as possible.",
+          "TechProEngineering provides services of high-quality powder coating of car rims and other metals in the city of Rivne and with delivery throughout the territory of Ukraine.",
+          "The cost of the powder painting service is calculated individually."
         ],
-        phoneText: "З усіх питань звертайтесь за телефоном:",
-        emailText: "Email для зв’язку:"
+        phoneText: "For all questions, contact us by phone, our managers will be happy to help you:",
+        emailText: "Email:"
       },
       {
         id: "4",
-        title: "Склоструменева та піскоструменева обробка",
+        url: "sklostrumeneva-piskostrumenneva-obrobka",
+        helmet: {
+          title: "Glass-blasting and sandblasting of metal TechPro Rivne",
+          metaContent: "Delicate cleaning and grinding of metal, glass-blasting and sandblasting without damage to carvings and surfaces in the Rivne region and with delivery across Ukraine from Tech Pro Engineering."
+        },
+        title: "Glass-blasting and sandblasting",
         mediaType: "image",
         content: [
-          "Ми спеціалізуємося і на склоструменевій та піскоструменевій обробці, що є одними з фінішних обробок поверхонь металевих деталей. Суть склоструменевої обробки полягає в бомбардуванні оброблюваної поверхні скляними кульками різного діаметру, що в результаті дає матовану рівномірну поверхню. Окрім обробки металевих поверхонь склоструменева обробка застосовується для обробки скла, каменю, пластику тощо.",
-          "Піскоструменева обробка металу - це спосіб очистки металевих поверхонь абразивним потоком, який виконує роль шліфувального засобу. Такий процес має подвійну функцію: очищає поверхню і надає їй шорсткості.",
-          "Ви можете самостійно обрати тип обробки, який найбільше Вас цівавить, та зв’язатись з нами."
+          "We offer glass-blasting and sandblasting services, which are one of the finishing treatments for the surfaces of metal parts. The essence of glass-blasting is the bombardment of the treated surface with glass balls of different diameters, which results in a matte, uniform surface. In addition to the treatment of metal surfaces, glass-blasting is used for the treatment of glass, stone, plastic, etc.",
+          "The delicacy of this treatment allows you to clean the materials without damaging the threads and landing surfaces.",
+          "Sandblasting of metal is a method of cleaning metal surfaces with an abrasive flow that acts as a grinding agent. This process has a double function: it cleans the surface and gives it roughness.",
+          "You can independently choose the type of processing that interests you the most and contact us.",
+          "TechProEngineering provides services of glass-blasting and sandblasting of parts, metal surfaces in Rivne and with delivery throughout Ukraine."
         ],
-        phoneText: "З усіх питань звертайтесь за телефоном:",
-        emailText: "Email для зв’язку:"
+        phoneText: "For all questions, contact us by phone, our managers will be happy to help you:",
+        emailText: "Email:"
       },
       {
         id: "5",
-        title: "Шліфування та турбогалтування",
+        url: "shlifuvanya-turbogaltuvanya",
+        helmet: {
+          title: "High-precision metal machining, grinding, turbohalting, laser cutting and engraving TechPro Rivne",
+          metaContent: "Complex high-precision metalworking in the city of Rivne, centerless grinding and polishing of metals, turbo-halting of metal products in the Rivne region and with delivery across Ukraine from Tech Pro Engineering."
+        },
+        title: "Grinding and turbohalting",
         mediaType: "video",
         content: [
-          "Наша компанія також надає послуги безцентрового шліфування та полірування металевих виробів. Безцентрове шліфування, здійснюване без затиску і без пристроїв примусового обертання деталі, не вимагає створення центрових базових гнізд і спрощує автоматизацію обробки.",
-          "Ми надаємо наступні послуги:",
+          "Our company also provides services for centerless grinding and polishing of metal products. This method has fairly high efficiency and high processing accuracy. Centerless grinding, performed without a clamp and without devices for forced rotation of the part, does not require the creation of central base sockets and simplifies processing automation." ,
+          "We provide the following services:",
           [
-            "Шліфування плоских поверхонь",
-            "Шліфування циліндричних поверхонь"
+           "- Grinding of flat surfaces;",
+           "- Grinding of cylindrical surfaces."
           ],
-          "TECHPRO ENGINEERING виконує також галтування і полірування деталей з чорної та нержавіючої сталі, титану та латуні в галтувальних вібромашинах.В основному це застосовується в якості фінішної обробки деталей з різних металів, в результаті чого можна отримати практично дзеркальну поверхню."
+          "TECHPRO ENGINEERING also performs felting and polishing of parts made of black and stainless steel, titanium and brass in felting vibrating machines.",
+          "The main application is as a finishing treatment of parts made of various metals, as a result of which it is possible to obtain an almost mirror-like surface.",
+          "TechProEngineering provides services of metal grinding, turbogalting and polishing of parts in the city of Rivne and with delivery throughout the territory of Ukraine."
         ],
-        phoneText: "З усіх питань звертайтесь за телефоном:"
+        phoneText: "For all questions, contact us by phone, our managers will be happy to help you:",
+        emailText: "Email:"
       },
       {
         id: "6",
-        title: "Ультразвукове промислове очищення",
+        url: "ultrazvukove-ochyschenya",
+        helmet: {
+          title: "Ultrasonic cleaning of impurities of ani tsomplehiti TechPro Rivne",
+          metaContent: "Cleaning of impurities of any complexity, degreasing, decarburization and removal of scale from the most difficult-to-reach places of parts and components in an ultrasonic industrial bath. Ultrasonic cleaning in the Rivne region and with delivery across Ukraine from Tech Pro Engineering."
+        },
+        title: "Ultrasonic industrial cleaning",
         mediaType: "image",
         content: [
-          "Ультразвукова промислова ванна для очищення деталей є найкращим інструментом для знежирення, зневуглецювання та видалення накипу для всіх деталей та компонентів, що ми і пропонуємо нашим клієнтам.",
-          "Ультразвукове очищення є запорукою досягнення найкращих результатів навіть в найбільш важкодоступних місцях, незалежно від їх складності та конфігурації. Очистимо ваші деталі до блиску"
+          "Ultrasonic industrial parts cleaning bath is the ultimate degreasing, decarburizing and descaling tool for all parts and components.",
+          "Ultrasonic cleaning is the key to achieving the best results even in the most difficult-to-reach places, regardless of their complexity and configuration.",
+          "The main advantages of cleaning parts with ultrasound:",
+          [
+            "- Removal of all types of contamination, including oil, grease, soot, rust, protective enamels and others;",
+            "- Fast, effective and thorough cleaning, no mechanical damage or scratches;",
+            "- Ultrasound cleaning is safe for all types of materials, does not have a mechanical effect on the surface of the cleaned parts."
+          ],
+          "TechProEngineering provides services for ultrasonic cleaning of parts from contamination in Rivne and with delivery throughout Ukraine."
         ],
-        phoneText: "З усіх питань звертайтесь за телефоном:",
-        emailText: "Email для зв’язку:"
+        phoneText: "For all questions, contact us by phone, our managers will be happy to help you:",
+        emailText: "Email:"
       },
       {
         id: "7",
-        title: "Ультрафіолетовий друк",
+        url: "ultrafioletovyy-druk",
+        helmet: {
+          title: "Clear and high-quality UV printing on flat, cylindrical surfaces TechPro Rivne",
+          metaContent: "Reliable, clear and high-quality ultraviolet printing on wood, plywood, chipboard, glass, ceramics and other materials. We perform ultraviolet printing on flat, cylindrical surfaces in the Rivne region and with delivery across Ukraine from Tech Pro Engineering."
+        },
+        title: "UV printing",
         mediaType: "video",
         content: [
-          "Унікальна послуга, яку ми надаємо – це ультрафіолетовий друк. У нашому парку наявний ультрафіолетовий принтер останнього покоління з додатковою установкою, що дає можливість наносити надзвичайно чітке та якісне зображення не лише на плоских поверхнях, а й на циліндричних на усі 360 градусів!",
-          "Друк не втрачає якості, кольору та надійно тримається на майже усіх матеріалах (дерево, фанера, ЛДСП, МДФ, скло, пластик, акрил, композит, камінь, полотно, кераміка)."
+          "The unique service we provide is ultraviolet printing. We have a last-generation ultraviolet printer in our fleet with an additional installation, which allows us to apply an extremely clear and high-quality image not only on flat surfaces, but also on cylindrical surfaces at all 360 degrees!",
+          "The print does not lose its quality, color, and reliably adheres to almost all materials (wood, plywood, chipboard, MDF, glass, plastic, acrylic, composite, stone, canvas, ceramics).",
+          "You can order UV printing on the following surfaces:",
+          [
+            "- Trees, plywood, chipboard, MDF (tables, wardrobes, kitchen cabinets, signs, etc.);",
+            "- Glass (kitchen aprons, doors, stained-glass windows, furniture, interior partitions, etc.);",
+            "- Plastics, acrylics, composites (advertising products - stands, showcases, signs, etc.);",
+            "- Stones (panels, frescoes, facades of buildings, etc.);",
+            "- Wallpapers (photowallpapers of different textures for different types of rooms);",
+            "- Canvases (pictures for children's room, office, living room, kitchen);",
+            "- Ceramics (tiles, etc.);",
+            "- Silicones (phone cases)."
+          ],
+          "TechProEngineering provides ultraviolet printing services on wood, glass, plastic, silicone and other materials in Rivne and with delivery throughout Ukraine."
         ],
-        phoneText: "З усіх питань звертайтесь за телефоном:",
-        emailText: "Email для відправки креслень та ваших ілюстрацій:"
+        phoneText: "You can contact us by phone:",
+        emailText: "Email for sending drawings:"
       }
     ]
   },
   ordering: {
-    title: "Оформлення замовлення",
-    btnText: "Замовити зараз",
-    text1: "Початок роботи над замовленням відбувається лише після обговорення та уточнення усіх деталей та Ваших побажань.",
-    text2: "Терміни виконання замовлення залежать від наступних факторів:",
+    title: "Order processing",
+    btnText: "Order now",
+    text1: "Work on the order begins only after discussion and clarification of all details and your wishes.",
+    text2: "The terms of the order fulfillment depend on the following factors:",
     list2: [
-      "Тип роботи",
-      "Навантаженість виробництва",
-      "Наявність необхідних креслень та (або) моделей"
+      "Order type",
+      "Production load",
+      "Availability of necessary drawings and (or) models"
     ],
     list3: [
-      "У свою чергу ми намагатимемося виконати Ваше замовлення якнайшвидше.",
-      "Якщо у Вас немає макету чи креслень, наші спеціалісти допоможуть вам у цьому та підготують усі необхідні матеріали до виробництва.",
-      "Приймаємо замовлення по всій Україні.",
-      "ВІДПРАВКА ТОВАРУ можлива будь-якими ТРАНСПОРТНИМИ КОМПАНІЯМИ."
+      "In turn, we will try to fulfill your order as soon as possible.",
+      "If you do not have a layout or drawings, our specialists will help you with this and prepare all the necessary materials for production.",
+      "We take orders throughout Ukraine.",
+      "DELIVERING is possible by any TRANSPORT COMPANIES."
     ]
   },
   qa: {
-    title: "Часті запитання",
+    title: "QA",
     questions: [
       {
-        title: "Як відбувається процес оформлення замовлення? ",
+        title: "How does the ordering process work? ",
         list1: [
-          "Після контакту з нашими спеціалістами (за допомогою мейлу, телефону, соцмереж тощо), обговорення усіх деталей і попереднього прорахунку Вашого замовлення, ми передаємо усі ці данні на виробництво."
+          "After contacting our specialists (via e-mail, phone, social networks, etc.), discussing all the details and pre-calculating your order, we transfer all this data to production."
         ]
       },
       {
-        title: "Як довго очікувати на виконання мого замовлення?",
+        title: "How long will it take for my order to be fulfilled?",
         list1: [
-          "Терміни виконання замовлення залежать від наступних факторів: тип роботи, серійність, навантаженість виробництва, наявність необхідних креслень та моделей.",
-          "В свою чергу ми намагаємося виконати ваше замовлення якнайшвидше."
+          "Terms of order fulfillment depend on the type of work, series, production load, availability of the necessary drawings and models.",
+          "In turn, we guarantee quick fulfillment of your order"
         ]
       },
       {
-        title: "Я маю потребу у лазерній різці, гравіюванні, нанесенні друку, але не маю готових матеріалів (креслень, моделей, ілюстрацій тощо)?",
+        title: "Is it possible to place an order without ready-made drawings, models, illustrations?",
         list1: [
-          "Ми маємо штатного дизайнера. За додаткову плату залюбки створимо Вам робоче креслення, дизайн для гравіювання чи для нанесення УФ друку."
+          "We have a full-time designer. For an additional fee, we will gladly create a working drawing for you, a design for engraving or for applying UV printing."
+        ]
+      },
+      {
+        title: "How is the delivery?",
+        list1: [
+          "We deliver finished products throughout Ukraine by any transport companies."
         ]
       }
     ]
   },
   socials: {
-    title: "Ми в соцмережах"
+    title: "Social Media"
   },
   feedback: {
-    title: "Зворотній зв'язок",
-    btnText: "Відправити"
+    title: "Feedback",
+    btnText: "Send",
+    inputs: [
+      {
+        name: "name",
+        type: "text",
+        placeholder: "Add translation"
+      },
+      {
+        name: "email",
+        type: "email",
+        placeholder: "Email"
+      },
+      {
+        name: "phone",
+        type: "number",
+        placeholder: "Add translation"
+      },
+      {
+        name: "town",
+        type: "text",
+        placeholder: "Add translation"
+      },
+      {
+        name: "service",
+        type: "checkbox",
+        placeholder: "Add translation",
+        options: [
+          "Add translation 1",
+          "Add translation 2",
+          "Add translation 3",
+          "Add translation 4",
+          "Add translation 5",
+          "Add translation 6"
+        ]
+      },
+      {
+        name: "comment",
+        type: "textarea",
+        placeholder: "Add translation"
+      }
+    ]
   },
   contacts: {
     title: "Contacts",
@@ -235,7 +347,7 @@ const en = {
         ]
       },
       {
-        title: "Email для контакту та креслень",
+        title: "Email",
         href: "malito:support@techproengineering.com.ua",
         icon: "icon-email",
         content: [
@@ -243,12 +355,12 @@ const en = {
         ]
       },
       {
-        title: "Адреса",
+        title: "Address",
         href: "https://www.google.es/maps/place/%D0%91%D1%94%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D1%8C%D0%BA%D0%B0,+13,+%D0%A1%D0%B0%D1%80%D0%BD%D0%B8,+%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0,+34500/@51.3318731,26.6152898,17z/data=!3m1!4b1!4m5!3m4!1s0x4728a291e9b2eeb9:0x72ecc9915fb54029!8m2!3d51.3318731!4d26.6174784",
         icon: "icon-location",
         content: [
-          "Україна, Рівненська область,",
-          "м. Сарни, вул. Бєлгородська 13"
+          "Ukraine, Rivne Region,",
+          "Sarny city, str. Belgorodska, 13"
         ]
       }
     ]

@@ -1,6 +1,7 @@
 import React from "react"
 import { RecoilRoot } from 'recoil'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import { ROUTE_NAMES } from './data/data'
 
 import Header from './components/Header'
@@ -14,20 +15,22 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <RecoilRoot>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path={ROUTE_NAMES.HOME} element={<HomePage />} />
-          <Route path={ROUTE_NAMES.ABOUT_US} element={<AboutUsPage />} />
-          <Route path={ROUTE_NAMES.SERVISES} element={<ServicesPage />} exact />
-          <Route path={ROUTE_NAMES.SERVISE} element={<ServicePage />} />
-          <Route path={ROUTE_NAMES.FEEDBACK} element={<FeedbackPage />} />
-        </Routes>
-        <ScrollToTop />
-        <Footer />
-      </Router>
-    </RecoilRoot>
+    <HelmetProvider>
+      <RecoilRoot>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path={ROUTE_NAMES.HOME} element={<HomePage />} />
+            <Route path={ROUTE_NAMES.ABOUT_US} element={<AboutUsPage />} />
+            <Route path={ROUTE_NAMES.SERVISES} element={<ServicesPage />} exact />
+            <Route path={ROUTE_NAMES.SERVISE} element={<ServicePage />} />
+            <Route path={ROUTE_NAMES.FEEDBACK} element={<FeedbackPage />} />
+          </Routes>
+          <ScrollToTop />
+          <Footer />
+        </Router>
+      </RecoilRoot>
+    </HelmetProvider>
   )
 }
 

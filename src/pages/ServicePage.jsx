@@ -1,18 +1,19 @@
 import React from "react"
+import { Helmet } from "react-helmet-async"
 import { useRecoilValue } from 'recoil'
 import { languageState } from "../data/recoil"
 import { Link, useLocation } from "react-router-dom"
 import { ROUTE_NAMES } from "../data/data"
 import AppearOnScrollWrapper from "../components/animation/AppearOnScrollWrapper"
 
-import video1 from "../media/service_1.mp4"
-import video2 from "../media/service_3.mp4"
-import video3 from "../media/service_5.mp4"
-import video4 from "../media/service_7.mp4"
+import video1 from "../media/lazerna_rezka.mp4"
+import video2 from "../media/poroshkove_farbuvanya.mp4"
+import video3 from "../media/shlifuvanya_ta_turbogaltuvanya.mp4"
+import video4 from "../media/ultrafioletovyy_druk.mp4"
 
-import image1 from "../media/service_2.png"
-import image2 from "../media/service_4.png"
-import image3 from "../media/service_6.png"
+import image1 from "../media/lazerne_graviyuvanya.png"
+import image2 from "../media/sklostrumeneva_ta_piskostrumeneva_obrobka.png"
+import image3 from "../media/ultrazvukove_promyslove_ochyschenya.png"
 
 const getMedia = (id) => {
   switch (id) {
@@ -39,6 +40,10 @@ const ServiceItem = ({ serviceObject }) => {
 
   return (
     <>
+      <Helmet>
+        <title>{serviceObject.helmet.title}</title>
+        <meta name="description" content={serviceObject.helmet.metaContent} />
+      </Helmet>
       {serviceObject.mediaType === "video" && (
         <video autoPlay muted loop className="service-item-page_media">
           <source src={media} type="video/mp4" />
@@ -97,12 +102,13 @@ const ServicePage = () => {
   const { services } = lang
   const { pathname } = useLocation()
   const splittedPathname = pathname.split('/')
-  const serviceId = splittedPathname[splittedPathname.length - 1]
+  const serviceUrl = splittedPathname[splittedPathname.length - 1]
  
   return (
     <div className="page service-item-page text-green">
+      
       {services.list.map((serviceObject) => {
-        return serviceObject.id === serviceId
+        return serviceObject.url === serviceUrl
           ? <ServiceItem serviceObject={serviceObject} key={serviceObject.title} />
           : null
       })}

@@ -168,7 +168,7 @@
   background-color: transparent;
 }
 
-/* PADDING MARGIN */
+/* PADDING MARGIN WIDTH */
 .pd--4 {
   padding: 4vw;
 }
@@ -197,6 +197,10 @@
   margin-left: 10px;
 }
 
+.w-100 {
+ width: 100%;
+}
+
 /* BUTTONS */
 
 button {
@@ -208,8 +212,7 @@ button {
   background: black;
   border: 1px solid rgba(148, 148, 148, 0.275);
   padding: 2px;
-  width: 100%;
-  max-width: 200px;
+  width: 200px;
   transition: 500ms;
 
   &_container {

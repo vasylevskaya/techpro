@@ -26,7 +26,9 @@ const VideoBackground = () => {
             <span></span>
           </Link>
         ))}
-        <Button text={videoBg.btnText} link="SERVISES" />
+        <Link to={ROUTE_NAMES.SERVISES}>
+          <Button text={videoBg.btnText} />
+        </Link>
     </div>
     </div>
   )
