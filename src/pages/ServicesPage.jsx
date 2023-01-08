@@ -17,7 +17,6 @@ const ServicesPage = () => {
       <AppearOnScrollWrapper element={(
         <ul className='services-page_nav'>
           {services.list.map((service) => {
-            console.log(service)
             return (
             <Link to={`/services/${service.url}`} key={service.title}>
               <li className='services-page_nav_nav-item inner-border fs-11 green-shadow-hover'>

@@ -20,7 +20,7 @@ export const feedbackFormData =  {
     },
     {
       name: "phone",
-      type: "number",
+      type: "text",
       placeholder: "Номер телефону"
     },
     {

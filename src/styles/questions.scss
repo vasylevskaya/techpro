@@ -29,6 +29,10 @@
       align-items: center;
       gap: 20px;
 
+      div:not(.inner-border) {
+        width: 100%;
+      }
+
       &_question {
         display: flex;
         gap: 15px;

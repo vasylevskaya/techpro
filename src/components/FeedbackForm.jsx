@@ -47,6 +47,12 @@ const FeedbackForm = () => {
                           className={`feedback-form_input inner-border fs-12
                             ${!formikContext.errors[input.name] && formikContext.touched[input.name] && "validated"}`}
                           placeholder={input.placeholder}
+                          onChange={(event) => {
+                            if (input.name === "phone" && !event.target.value.match(/^[0-9+]*$/)) {
+                              return
+                            }
+                            formikContext.handleChange(event)
+                          }}
                         />
                       ) : (
                         <div className={`feedback-form_input inner-border fs-12 checkbox

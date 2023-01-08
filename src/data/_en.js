@@ -306,7 +306,7 @@ const en = {
       },
       {
         name: "phone",
-        type: "number",
+        type: "text",
         placeholder: "Add translation"
       },
       {

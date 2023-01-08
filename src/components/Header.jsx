@@ -30,7 +30,9 @@ const Header = () => {
 
   return (
     <header className={`header ${isHeaderTransparent ? "bg-trans" : "bg-black"}`}>
-      <img className="header_logo" src={logo} alt="logo" />
+      <Link to={ROUTE_NAMES.HOME}>
+        <img className="header_logo" src={logo} alt="logo" />
+      </Link>
       <div className="header_container">
         <div className={`header_nav drawer-menu ${isDrawerMenuVisible && "active"}`}>
           <button className="header_menu-btn btn-close" onClick={() => toggleDrawerMenu(!isDrawerMenuVisible)}> </button>
